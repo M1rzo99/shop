@@ -3,8 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { childProps } from "@/types";
 import { FC } from "react";
-import Navbar from "@/shared/navbar";
 import { Toaster } from "@/components/ui/sonner";
+import Navbar from "@/components/shared/navbar";
 
 const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -26,7 +26,7 @@ const RootLayout: FC<childProps> = ({ children }) => {
         className={`${montserrat.className} antialiased`}
       >
       <Navbar/>
-       <main>{children}</main>
+       <main className="container max-w-6xl mt-24">{children}</main>
     <Toaster/>
        {/* footer */}
       </body>
