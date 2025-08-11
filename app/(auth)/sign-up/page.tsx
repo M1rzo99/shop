@@ -1,6 +1,5 @@
 "use client"
 import { Card } from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
 import { registerSchema } from '@/lib/validation'
 import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
